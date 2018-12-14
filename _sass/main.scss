@@ -35,5 +35,13 @@ body {
 }
 
 .nav-button {
-    
+    border: 2px solid $color4;
+    color: $color4;
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    border: 2px solid $color4;
+    color: $color1;
+    background-color: $color4;
 }
