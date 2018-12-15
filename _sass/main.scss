@@ -27,21 +27,41 @@ $primary-invert: $pink-invert;
 */
 
 @import "../node_modules/bulma/bulma";
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700');
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Raleway', sans-serif;
+
 @import "variable";
 
 
 body {
     color: $color1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400 !important;
 }
 
-.nav-button {
-    border: 2px solid $color4;
-    color: $color4;
-    transition: 0.2s;
-}
+.navbar-c {
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-.nav-button:hover {
-    border: 2px solid $color4;
-    color: $color1;
-    background-color: $color4;
+    &__nav-button {
+        border: 2px solid $color4;
+        color: $color4;
+        transition: 0.1s;
+        font-weight: 700 !important;
+    }
+
+    &__nav-button:hover {
+        border: 2px solid $color4;
+        color: $color1;
+        background-color: $color4;
+        font-weight: 400 !important;
+    }
+
+    &__nav-btn-icon {
+        height: 24px;
+        width: 24px;
+    }
 }

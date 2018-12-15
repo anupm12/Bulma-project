@@ -19,6 +19,7 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -6525,14 +6526,23 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 body {
-  color: #413C58; }
-
-.nav-button {
-  border: 2px solid #68edc6;
-  color: #68edc6;
-  transition: 0.2s; }
-
-.nav-button:hover {
-  border: 2px solid #68edc6;
   color: #413C58;
-  background-color: #68edc6; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400 !important; }
+
+.navbar-c {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .navbar-c__nav-button {
+    border: 2px solid #68edc6;
+    color: #68edc6;
+    transition: 0.1s;
+    font-weight: 700 !important; }
+  .navbar-c__nav-button:hover {
+    border: 2px solid #68edc6;
+    color: #413C58;
+    background-color: #68edc6;
+    font-weight: 400 !important; }
+  .navbar-c__nav-btn-icon {
+    height: 24px;
+    width: 24px; }
